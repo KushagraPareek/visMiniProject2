@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LAB 2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/simple-sidebar.css" rel="stylesheet">
+
+<style>   
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  display: none;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+  fill: black;
+}
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: .7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">LAB2</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getPcaData()">SCREE DATA</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getPcaRandom()">SCREE RANDOM</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getPcaStratified()">SCREE STRATIFIED</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getScatterData()">SCATTER DATA</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getScatterRandom()">SCATTER RANDOM</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getScatterStratified()">SCATTER STRATIFIED</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsEScatterData()">MDSE DATA</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsEScatterRandom()">MDSE RANDOM</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsEScatterStratified()">MDSE STRATIFIED</a>    
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsCScatterData()">MDSC DATA</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsCScatterRandom()">MDSC RANDOM</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" onclick="getmdsCScatterStratified()">MDSC STRATIFIED</a>    
+       <a href="#" class="list-group-item list-group-item-action bg-light" onclick="scatterMatrixData()">MATRIX DATA</a>
+       <a href="#" class="list-group-item list-group-item-action bg-light" onclick="scatterMatrixRandom()">MATRIX RANDOM</a>
+       <a href="#" class="list-group-item list-group-item-action bg-light" onclick="scatterMatrixStratified()">MATRIX STRATIFIED</a>
+    
+      </div>
+    </div>
+   
+    <div id="page-content-wrapper">
+
+      <div class="container-fluid">
+       <div id="graph1"></div>
+       <div id="graph"></div>
+      </div>
+    </div>
+  
+
+  </div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/js/index.js"></script>
+
+ </body>
+
+</html>
